@@ -1,0 +1,241 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* Đảm bảo phần tử HTML và thẻ mặc định không có padding và margin */
+
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #747579;
+}
+
+html {
+    font-size: 100%;
+    position: relative;
+}
+
+/* body {
+    position: relative;
+    z-index: 0;
+} */
+
+/* -------------------------- */
+/* Header */
+.navbar {
+    position: absolute;
+    background: transparent;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    z-index: 1020;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1300px;
+
+}
+
+.navbar>.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar__start {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+/* navbar image */
+.navbar__start img {
+    max-width: 100%;
+    /* height: auto; */
+    height: 36px;
+    display: block;
+    width: auto;
+}
+
+/* navbar switch*/
+.modeswitch-wrap {
+    cursor: pointer;
+}
+
+.modeswitch-wrap .modeswitch-item {
+    width: 42px;
+    height: 12px;
+    background: #747579;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 16px;
+    transition: all 1s;
+}
+
+.modeswitch-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-14%);
+    height: 26px;
+    width: 26px;
+    background: #d8831b;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 40%);
+    font-size: 14px;
+    color: #fff;
+    transition: all 1s;
+}
+
+.modeswitch-icon::before {
+    content: "\f185";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    border: none;
+    height: 26px;
+    width: 26px;
+    line-height: 26px;
+    text-align: center;
+    display: block;
+}
+
+/* Main */
+section {
+    padding-top: 3.5rem;
+    padding-bottom: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 2.8125rem;
+}
+
+.h6,
+h6 {
+    font-size: 0.9375rem;
+}
+
+h1,
+h6,
+h2,
+.h6,
+h5>a {
+    color: #24292d;
+    font-family: "Heebo", sans-serif;
+    font-weight: 700;
+    line-height: 1.25;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+}
+
+.btn {
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+    outline: 0;
+    white-space: nowrap;
+    margin-bottom: 6px;
+}
+
+.mt-n8 {
+    margin-top: -12rem;
+}
+
+.end-0 {
+    right: -11rem !important;
+}
+
+.fill-primary {
+    fill: #066ac9 !important;
+}
+
+.opacity-1 {
+    opacity: 0.1 !important;
+}
+
+/* Section 2 */
+.ms-n8 {
+    margin-left: -7rem !important;
+}
+
+.translate-middle {
+    transform: translate(0%, -8%) !important;
+}
+
+h2 {
+    font-size: 2.34375rem;
+}
+
+.list-group {
+
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    border-radius: 0.325rem;
+}
+
+.btn-primary-soft {
+    color: #066ac9;
+    border: none;
+}
+
+.bg-opacity {
+    background-color: rgba(0, 123, 255, 0.1) !important
+}
+
+.icon {
+    /* opacity: 1 !important; */
+    width: 5rem;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.9rem;
+    background-color: rgba(255, 255, 255, 1) !important;
+}
+
+.btn-transition {
+    transition: all 0.2s ease-in-out;
+}
+
+.icon>img {
+    opacity: 1;
+}
+
+h5>a {
+    font-weight: 750;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none !important;
+    font-size: 1.3125rem;
+}
+
+.stretched-link::after {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    content: "";
+}
