@@ -10,3 +10,16 @@ toggle.onclick = function () {
     }
     document.documentElement.setAttribute('data-theme', targetTheme)
 }
+
+window.addEventListener('scroll', function () {
+    console.log(window.scrollY)
+    if (window.scrollY < 100) {
+        document
+            .querySelector('.navbar')
+            .classList.remove('navbar_stiky-on');
+    } else {
+        document
+            .querySelector('.navbar')
+            .classList.add('navbar_stiky-on');
+    }
+});
